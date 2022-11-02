@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+		 
+	<script type="text/javascript" language="javascript">
+             $(document).ready(function() {
+
+
+			       $("#submit").click(function() {
+				var output = "Rollno=" + $("#Sno").val() + "&Name=" + $("#Name").val() +"&Mark=" + $("#Mark").val();
+				var output1 = "Rollno=" + $("#Sno1").val() + "&Name=" + $("#Name1").val() +"&Mark=" + $("#Mark1").val();
+				alert(output);
+			});
+                $("#reset").click(function() {
+				$("#Sno").val('');
+				$("#Name").val('');
+				$("#Mark").val('');
+				$("#Sno1").val('');
+				$("#Name1").val('');
+				$("#Mark1").val('');
+				alert(reset);
+			});
+              });
+			  </script>
+
+</head>>
+<body>
+<table border=1>
+<tr>
+<th>SNo</th>
+<th>Name</th>
+<th>Mark</th>
+</tr>
+<td> <input type="text" id="Sno"></td>
+<td> <input type="text" id="Name"></td>
+<td> <input type="text" id="Mark"></td>
+</tr>
+</tr>
+<td> <input type="text" id="Sno1"></td>
+<td> <input type="text" id="Name1"></td>
+<td> <input type="text" id="Mark1"></td>
+</tr>
+</table>
+<br><br><br>
+<input type="button" id="reset" label="reset" value="reset" />
+<input type="button" id="submit" label="Submit" value="sumbit" />
+</body>
+</html>
